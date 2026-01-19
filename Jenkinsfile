@@ -11,9 +11,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                echo 'All tests passed'
-            }
+        bat 'test.bat'
+    }
         }
 
         stage('Deploy') {
